@@ -15,3 +15,11 @@ resource "aws_instance" "web_server" {
 output "public_ip" {
   value = aws_instance.web_server.public_ip
 }
+terraform {
+  backend "remote" {
+    organization = "creonextech"
+    workspaces {
+      name = "github-actions"
+    }
+  }
+}
