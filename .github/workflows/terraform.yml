@@ -1,4 +1,6 @@
 name: Terraform EC2 Deployment
+env:
+  TFC_TOKEN_app_terraform_io: ${{ secrets.TFC_TOKEN_app_terraform_io }}
 
 on:
   workflow_dispatch: # Manual trigger
