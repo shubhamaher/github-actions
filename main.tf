@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "web_server" {
-  ami           = "ami-0c55b159cbfafe1f0" # Ubuntu 22.04 LTS
+  ami           = "ami-0a94c8e4ca2674d5a" # Ubuntu 22.04 LTS
   instance_type = "t2.micro"
   key_name = "devops_key"
   
